@@ -37,7 +37,7 @@ export default function  Event_Handling(){
         }
         name="password"
         />
-        <br />
+        <br/>
         <button>Submit</button>
     </form>
     

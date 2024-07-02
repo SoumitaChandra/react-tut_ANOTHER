@@ -1,25 +1,45 @@
 export default function  Event_Handling(){
-    return <form>
+    return <div>
+        <form onSubmit={(e)=>{
+            e.preventDefault();
+            const formData = new FormData(e.target)
+            console.log(formData.get("username"))
+            console.log(formData.get("password"))
+        }}>
         <label htmlFor="username">Username</label>
         <br />
-        <input  id="Username" onClick={
+        <input  id="Username"
+        onClick={
             (e)=>{
                 console.log("clicked")
                 console.log(e)
             }
         }
-        onKeyDown={
+        onChange={
             (e)=>{
-                console.log("key pressed")
-                console.log(e.key)
+                console.log(`username : ${e.target.value}`)//by this we can hold the username value
             }
         }
+        name="username"
         />
+
         <br />
+
         <label htmlFor="Password">Password</label>
         <br />
-        <input type="password" id=" text" />
+
+        <input type="password" 
+        id=" text" 
+        onChange ={
+            (e)=>{
+                console.log(e.target.value)
+            }
+        }
+        name="password"
+        />
         <br />
         <button>Submit</button>
     </form>
+    
+    </div>
 }

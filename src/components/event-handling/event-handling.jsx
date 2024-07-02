@@ -6,7 +6,8 @@ export default function  Event_Handling(){
             console.log(formData.get("username"))
             console.log(formData.get("password"))
         }}>
-        <label htmlFor="username">Username</label>
+      
+        <label htmlFor="username">Username fr event_handling</label>
         <br />
         <input  id="Username"
         onClick={
@@ -25,9 +26,9 @@ export default function  Event_Handling(){
 
         <br />
 
-        <label htmlFor="Password">Password</label>
+        <label htmlFor="Password">Password for event_handling</label>
         <br />
-
+    
         <input type="password" 
         id=" text" 
         onChange ={

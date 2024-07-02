@@ -1,6 +1,7 @@
 import UserProfile from "./components/basic_jsx/userProfile";
 import React from "react";
 import Event_Handling from "./components/event-handling/event-handling";
+import States from "./components/States/Basic_States";
 
 export default function App (){
 
@@ -18,6 +19,7 @@ export default function App (){
              />
 
             <Event_Handling/>
+            <States/>
 
         </React.Fragment>
     );

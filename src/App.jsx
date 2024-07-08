@@ -5,6 +5,15 @@ import States from "./components/States/Basic_States";
 
 export default function App (){
 
+    // eslint-disable-next-line no-unused-vars
+     window.addEventListener('resize' , (e)=>{
+        console.log(window.innerHeight, window.innerWidth);
+    });
+    window.addEventListener("click" , (e) =>{
+        console.log(e.clientX, e.clientY);
+    })
+
+
     const callme = ()=>{
       console.log("hello");
     }

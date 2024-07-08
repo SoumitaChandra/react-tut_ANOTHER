@@ -2,6 +2,7 @@ import UserProfile from "./components/basic_jsx/userProfile";
 import React from "react";
 import Event_Handling from "./components/event-handling/event-handling";
 import States from "./components/States/Basic_States";
+import StateArray from "./components/States/States_arrays";
 
 export default function App (){
 

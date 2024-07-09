@@ -14,9 +14,8 @@ export default function App (){
         console.log(e.clientX, e.clientY);
     })
 
-
     const callme = ()=>{
-      console.log("hello");
+      console.log("hiiiii");
     }
     return(
         <React.Fragment>
